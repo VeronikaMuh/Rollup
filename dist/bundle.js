@@ -7,8 +7,8 @@ var e = [],
 function n(n, r) {
   if (n && "undefined" != typeof document) {
     var a,
-      s = true === r.prepend ? "prepend" : "append",
-      d = true === r.singleTag,
+      s = !0 === r.prepend ? "prepend" : "append",
+      d = !0 === r.singleTag,
       i = "string" == typeof r.container ? document.querySelector(r.container) : document.getElementsByTagName("head")[0];
     if (d) {
       var u = e.indexOf(i);
